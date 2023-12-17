@@ -17,7 +17,7 @@ html {
   height: 947px;
   position: relative;
   left: -8px;
-
+  top: -8px;
 }
 
 .desktop .overlap {
@@ -1249,4 +1249,43 @@ html {
   height: 62px;
   top: 24px;
   left: 44px;
+}
+.imge-my {
+  display: none;
+}
+.img-class {
+  position: absolute; 
+  width: 100%;
+}
+
+@media screen and (max-width:450px) {
+  
+  .desktop .mask-group-2 {
+    width: 1482px;
+    height: calc(100% + 17px);
+    top: -3px;
+  }
+  .desktop .overlap {
+    background: #120b1d;
+    width: 1482px;
+    
+  }
+  .desktop .mask-group {
+    width: 1482px;
+    height: calc(100% + 13px);
+  }
+  .img-class {
+    background: #120b1d;
+    width: 1482px;
+    height: calc(100% + 17px);
+  }
+  .desktop .rectangle-10 {
+    width: 1482px;
+  }
+  .desktop .overlap-6 {
+    width: 1482px;
+  }
+  .desktop .rectangle-11 {
+    width: 1482px;
+  }
 }
