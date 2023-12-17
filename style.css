@@ -475,6 +475,11 @@ html {
   left: 101px;
   object-fit: cover;
 }
+.img-myclass {
+  position: absolute; 
+  left: 800px; 
+  top: 170px;
+}
 
 .desktop .div-2 {
   width: 454px;
@@ -726,21 +731,22 @@ html {
 }
 
 .desktop .rectangle-9 {
-  position: absolute;
-  width: 231px;
-  height: 305px;
-  top: 890px;
-  left: 101px;
-  background-color: #40b5ff;
-  filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 202px); /* Adjust width based on your design */
+  background-color: transparent;
+  filter: blur(0px);
+  padding: 0 100px; /* Adjust padding to distribute the space */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+
 }
 
 .desktop .sepp {
-  left: 99px;
-  position: absolute;
   width: 236px;
   height: 304px;
-  top: 890px;
+  margin-top: 900px;
+
   object-fit: cover;
 }
 
@@ -1287,5 +1293,41 @@ html {
   }
   .desktop .rectangle-11 {
     width: 1482px;
+  }
+  .img-myclass {
+    left: 750px; 
+  }
+  .desktop .overlap-4 {
+    left: 100px;
+  }
+  .desktop .text-wrapper-11 {
+    left: 465px;
+  }
+  .desktop .text-wrapper-2 {
+    left: 562px;
+  }
+  .desktop .rectangle-4 {
+    left: 653px;
+  }
+  .desktop .group-4 {
+    left: 683px;
+  }
+  .desktop .rectangle-5 {
+    left: 890px;
+  }
+  .desktop .group-5 {
+    left: 920px;
+  }
+  .desktop .coming-soon {
+    left: 343px;
+  }
+  .desktop .OMNES {
+    left: 105px;
+  }
+  .desktop .img {
+    left: -40px;
+  }
+  .desktop .tv {
+    left: 1075px;
   }
 }
