@@ -22,26 +22,47 @@ html {
 
 .desktop .overlap {
   position: absolute;
-  width: 1481px;
+  width: 100%;
   height: 947px;
   top: 0;
 }
 
 .desktop .bg-glow {
   position: absolute;
-  width: 1440px;
+  width: 1480px;
   height: 947px;
   top: 0;
   left: 41px;
   background-image: url(./img/image.png);
   background-size: 100% 100%;
 }
-
+.omnes-img {
+  /* Set the maximum width to prevent image overflow */
+  width: 85%;
+  /* Other styles for the image */
+}
 .desktop .OMNES {
   position: absolute;
   height: 370px;
   top: 191px;
-  left: 112px;
+  width: 100%;
+  text-align: center;
+}
+.myclass-1 {
+  position: absolute;
+  height: 370px;
+  top: 191px;
+  width: 100%;
+  text-align: start;
+}
+.myclass-2 {
+  position: absolute;
+  height: 370px;
+  top: 370px;
+  display: flex;
+  align-items: center; /* Vertically align content within myclass-2 */
+  justify-content: flex-end; /* Align items to the end */
+  right: 40px; /* This will align the container to the right */
 }
 
 .desktop .world {
@@ -49,7 +70,10 @@ html {
   width: 437px;
   height: 129px;
   top: 551px;
-  left: 541px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Adjustments */
+  text-align: center; /* For multi-line text */
   font-family: "Russo One-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -62,10 +86,10 @@ html {
 
 .desktop .group {
   position: absolute;
-  width: 1346px;
+  width: 100%;
   height: 96px;
   top: 797px;
-  left: 89px;
+  left: 5%;
 }
 
 .desktop .overlap-group {
@@ -75,7 +99,7 @@ html {
 
 .desktop .overlap-group-wrapper {
   position: absolute;
-  width: 1346px;
+  width: 100%;
   height: 90px;
   top: 0;
   left: 0;
@@ -83,19 +107,19 @@ html {
 
 .desktop .OMNES-IS-a-wrapper {
   position: relative;
-  width: 1344px;
+  width: 100%;
   height: 90px;
 }
 
 .desktop .OMNES-IS-a {
   position: absolute;
   top: 9px;
-  left: 953px;
+  left: 75%;
   font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
-  text-align: right;
+  text-align: end;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -142,20 +166,17 @@ html {
 }
 
 .desktop .tv {
-  position: absolute;
+
   width: 349px;
   height: 382px;
-  top: 337px;
-  left: 1097px;
   object-fit: cover;
 }
 
 .desktop .img {
-  position: absolute;
+  position: relative;
   width: 722px;
   height: 621px;
-  top: 247px;
-  left: 0;
+  top: 80px;
   object-fit: cover;
 }
 
@@ -205,7 +226,7 @@ html {
   width: 100%;
   height: 873px;
   top: 0;
-  left: 1px;
+  left: 0;
 }
 
 .desktop .text-wrapper {
@@ -274,6 +295,7 @@ html {
   font-size: 22px;
   letter-spacing: 0;
   line-height: normal;
+  text-align: justify;
 }
 
 .desktop .game {
@@ -374,19 +396,39 @@ html {
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0)) 1;
 }
 
-.desktop .group-3 {
-  position: absolute;
-  width: 145px;
-  height: 113px;
-  top: 621px;
-  left: 453px;
+.desktop .flex-container {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing */
+  align-items: center; /* Align vertically if needed */
+  width: 800px; /* Set container width */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Adjustments */
+  text-align: center; /* For multi-line text */
+  top: 70%;
+  /* Add other styles as needed */
+}
+
+/* Individual div styles */
+.desktop .group-3,
+.desktop .group-4,
+.desktop .group-5 {
+  width: 199px;
+  height: 199px;
+  background-color: #32323273;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  backdrop-filter: blur(89px) brightness(100%);
+  -webkit-backdrop-filter: blur(89px) brightness(100%);
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0)) 1;
 }
 
 .desktop .text-wrapper-3 {
   position: absolute;
   width: 141px;
-  top: 0;
-  left: 0;
+  top: 25px;
+  left: 25px;
   font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
@@ -399,8 +441,8 @@ html {
 .desktop .text-wrapper-4 {
   position: absolute;
   width: 141px;
-  top: 92px;
-  left: 0;
+  top: 120px;
+  left: 25px;
   font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
@@ -408,22 +450,6 @@ html {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-}
-
-.desktop .group-4 {
-  position: absolute;
-  width: 145px;
-  height: 113px;
-  top: 621px;
-  left: 715px;
-}
-
-.desktop .group-5 {
-  position: absolute;
-  width: 145px;
-  height: 113px;
-  top: 621px;
-  left: 967px;
 }
 
 .desktop .team {
@@ -477,7 +503,7 @@ html {
 }
 .img-myclass {
   position: absolute; 
-  left: 800px; 
+  left: 55%; 
   top: 170px;
 }
 
@@ -685,6 +711,7 @@ html {
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
+  text-align: justify;
 }
 
 .desktop .rectangle-8 {
@@ -692,7 +719,7 @@ html {
   width: 408px;
   height: 544px;
   top: 314px;
-  left: 128px;
+  left: 8%;
 }
 
 .desktop .skier {
@@ -700,15 +727,17 @@ html {
   width: 221px;
   height: 456px;
   top: 367px;
-  left: 223px;
+  left: 14%;
   object-fit: cover;
 }
 
 .desktop .text-wrapper-12 {
   position: absolute;
   width: 478px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
   top: 69px;
-  left: 510px;
   font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   font-size: 100px;
@@ -739,7 +768,6 @@ html {
   filter: blur(0px);
   padding: 0 100px; /* Adjust padding to distribute the space */
   overflow-x: auto; /* Enable horizontal scrolling if needed */
-
 }
 
 .desktop .sepp {
@@ -792,6 +820,8 @@ html {
   height: 737px;
   top: 3990px;
   left: -1px;
+  background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+
 }
 
 .desktop .overlap-7 {
@@ -815,7 +845,7 @@ html {
   width: 665px;
   height: 102px;
   top: 171px;
-  left: 70px;
+  left: 7%;
   font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
@@ -826,9 +856,9 @@ html {
 
 .desktop .element-whitelisted {
   position: absolute;
-  width: 635px;
+  width: 596px;
   top: 303px;
-  left: 70px;
+  left: 7%;
   font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -842,7 +872,7 @@ html {
   width: 245px;
   height: 66px;
   top: 514px;
-  left: 78px;
+  left: 7%;
 }
 
 .desktop .frame {
@@ -941,7 +971,9 @@ html {
 .desktop .copyright-all {
   position: absolute;
   top: 371px;
-  left: 634px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
   font-family: "Glancyr-Light", Helvetica;
   font-weight: 300;
   color: #ffffff;
@@ -955,7 +987,9 @@ html {
   position: absolute;
   width: 635px;
   top: 160px;
-  left: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
   font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ff3fb9;
@@ -968,7 +1002,9 @@ html {
 .desktop .info-omnesworld-club {
   position: absolute;
   top: 224px;
-  left: 615px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
   font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -993,7 +1029,9 @@ html {
   width: 152px;
   height: 40px;
   top: 279px;
-  left: 670px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
 }
 
 .desktop .twitter {
@@ -1024,8 +1062,16 @@ html {
   position: absolute;
   width: 536px;
   height: 49px;
-  top: 85px;
-  left: 488px;
+}
+
+.desktop .logo-footer {
+  position: absolute;
+  width: 536px;
+  height: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 70px;
 }
 
 .desktop .logo-icon {
@@ -1033,7 +1079,7 @@ html {
   width: 222px;
   height: 224px;
   top: 73px;
-  left: 142px;
+  left: 10%;
   mix-blend-mode: overlay;
 }
 
@@ -1041,16 +1087,27 @@ html {
   position: fixed;
   width: 100%;
   height: 100px;
-  top: 10px;
-  /* Add a box shadow that will create a glowing effect */
-
-  /* Apply transition for a smoother effect */
-
-  /* Add animation to continuously change the glow intensity */
-
-
+  top: 0;
   z-index: 10000;
-
+  background-color: rgba(18, 11, 29, 0.5);
+}
+.desktop .menu {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute items evenly along the row */
+  width: 60%;
+  position: absolute;
+  left: 20%;
+}
+/* Adjust individual menu items */
+.desktop .trading-2,
+.desktop .staking,
+.desktop .team-2,
+.desktop .stories-2,
+.desktop .token,
+.desktop .roadmap,
+.desktop .game-2 {
+  margin: 32px 32px; /* Add margin for spacing between menu items */
 }
 /* Define a keyframe animation for the glow effect */
 @keyframes glow {
@@ -1067,7 +1124,7 @@ html {
   width: 114px;
   height: 40px;
   top: 31px;
-  left: 1269px;
+  left: 85%;
 }
 
 .desktop .button-hover-2 {
@@ -1102,7 +1159,7 @@ html {
 }
 
 .desktop .trading-2 {
-  position: fixed;
+ 
   width: 66px;
   height: 27px;
   top: 36px;
@@ -1118,7 +1175,7 @@ html {
 }
 
 .desktop .staking {
-  position: fixed;
+ 
   width: 68px;
   height: 27px;
   top: 36px;
@@ -1134,7 +1191,7 @@ html {
 }
 
 .desktop .team-2 {
-  position: fixed;
+ 
   width: 46px;
   height: 27px;
   top: 36px;
@@ -1150,7 +1207,7 @@ html {
 }
 
 .desktop .stories-2 {
-  position: fixed;
+ 
   width: 67px;
   height: 27px;
   top: 36px;
@@ -1166,7 +1223,7 @@ html {
 }
 
 .desktop .token {
-  position: fixed;
+ 
   width: 52px;
   height: 27px;
   top: 36px;
@@ -1182,7 +1239,7 @@ html {
 }
 
 .desktop .roadmap {
-  position: fixed;
+ 
   width: 82px;
   height: 27px;
   top: 36px;
@@ -1198,7 +1255,7 @@ html {
 }
 
 .desktop .game-2 {
-  position: fixed;
+ 
   width: 51px;
   height: 27px;
   top: 36px;
@@ -1217,8 +1274,8 @@ html {
   position: fixed;
   width: 95px;
   height: 28px;
-  top: 30px;
-  left: 979px;
+  top: 35px;
+  left: 64%;
   cursor: pointer;
 }
 
@@ -1226,8 +1283,8 @@ html {
   position: fixed;
   width: 74px;
   height: 47px;
-  top: 23px;
-  left: 713px;
+  top: 25px;
+  left: 47%;
   cursor: pointer;
 }
 
@@ -1236,7 +1293,7 @@ html {
   width: 69px;
   height: 103px;
   top: 16px;
-  left: 1294px;
+  left: 87%;
   cursor: pointer;
 }
 
@@ -1245,7 +1302,7 @@ html {
   width: 98px;
   height: 49px;
   top: 30px;
-  left: 1102px;
+  left: 74%;
   cursor: pointer;
 }
 
@@ -1253,8 +1310,8 @@ html {
   position: fixed;
   width: 202px;
   height: 62px;
-  top: 24px;
-  left: 44px;
+  left: 50px;
+  top: 25px;
 }
 .imge-my {
   display: none;
@@ -1265,34 +1322,48 @@ html {
 }
 
 @media screen and (max-width:450px) {
-  
+  .desktop .flex-container {
+    left: 760px;
+  }
+  .desktop .join-discord {
+    width: 1565px;
+    height: 737px;
+    top: 4003px;
+  }
   .desktop .mask-group-2 {
-    width: 1482px;
+    width: 1565px;
     height: calc(100% + 17px);
     top: -3px;
   }
   .desktop .overlap {
     background: #120b1d;
-    width: 1482px;
+    width: 1565px;
     
   }
+  .desktop .trading {
+    background: #120b1d;
+    width: 1565px;
+  }
   .desktop .mask-group {
-    width: 1482px;
+    width: 1565px;
     height: calc(100% + 13px);
   }
   .img-class {
     background: #120b1d;
-    width: 1482px;
+    width: 1565px;
     height: calc(100% + 17px);
+  }
+  .desktop .team {
+    width: 1565px;
   }
   .desktop .rectangle-10 {
     width: 1482px;
   }
   .desktop .overlap-6 {
-    width: 1482px;
+    width: 1565px;
   }
   .desktop .rectangle-11 {
-    width: 1482px;
+    width: 1565px;
   }
   .img-myclass {
     left: 750px; 
@@ -1322,12 +1393,50 @@ html {
     left: 343px;
   }
   .desktop .OMNES {
-    left: 105px;
+    left: 0;
   }
   .desktop .img {
     left: -40px;
   }
   .desktop .tv {
     left: 1075px;
+  }
+  .desktop .footer {
+    width: 1565px;
+    background:#120b1d;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop .coming-soon {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; 
+  }
+  .desktop .text-wrapper-2 {
+    left: 50%;
+    transform: translateX(-50%);
+    /* Adjustments */
+    text-align: center; /* For multi-line text */
+  }
+  .desktop .overlap-4 {
+    left: 50%;
+    transform: translateX(-50%);
+    /* Adjustments */
+    text-align: center; /* For multi-line text */
+  }
+  .desktop .text-wrapper-11 {
+    left: 50%;
+    transform: translateX(-50%);
+    /* Adjustments */
+    text-align: center; /* For multi-line text */
+  }
+  .desktop .sepp-grew-up-in-a {
+    left: 38%;
+    text-align: justify;
+  }
+  .desktop .text-wrapper-13 {
+    left: 38%;
   }
 }
