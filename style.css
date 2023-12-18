@@ -264,6 +264,24 @@ html {
   height: 873px;
   top: 0;
   left: 0;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.desktop .background {
+  width: 100%;
+  height: 873px;
+  top: 0;
+  left: 0;
+  background:url('img/imge 1.png');
+  position: relative;
+}
+.desktop .layer-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)); /* Gradient from black to white with opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .desktop .text-wrapper {
@@ -361,6 +379,7 @@ html {
   left: 0;
 }
 
+
 .desktop .coming-soon {
   position: absolute;
   width: 755px;
@@ -455,7 +474,7 @@ html {
   height: 199px;
   background-color: #32323273;
   border-radius: 22px;
-  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.49);
   backdrop-filter: blur(89px) brightness(100%);
   -webkit-backdrop-filter: blur(89px) brightness(100%);
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0)) 1;
@@ -667,7 +686,7 @@ html {
 .desktop .text-wrapper-9 {
   position: absolute;
   width: 108px;
-  top: 30px;
+  top: 15px;
   left: 43px;
   font-family: "Glancyr-Bold", Helvetica;
   font-weight: 700;
