@@ -20,8 +20,6 @@
                 <div class="text-wrapper-16">Play Now</div>
                 <img style="position: absolute; margin-top: 50px;" src="img/36.png" />
               </div>
-              
-
             </div>
             <div class="game-2"><a style="text-decoration: none; color: white;" href="#game">Game</a></div>
             <div class="trading-2"><a style="text-decoration: none; color: white;" href="#trading">Trading</a></div>
@@ -159,8 +157,10 @@
                 Survivalist, An Expert Skier, And A Masterful Fighter Who Once Even Tamed A Wild Yeti With Nothing But His
                 Hands.
               </p>
+              <div>
               <img class="rectangle-8" src="img/Rectangle 25.png" />
               <img class="skier" src="img/skier 1.png" />
+              </div>
               
               <div class="text-wrapper-13">Sepp</div>
             </div>
@@ -215,5 +215,133 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      // Smooth scrolling function
+      function smoothScroll(target, duration) {
+  const targetSection = document.querySelector(target);
+  const targetPosition = targetSection.offsetTop; // Get the top position of the target element
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  const increments = 30;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+// Event listeners for navbar links
+const navLinks = document.querySelectorAll('.menu a');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetSectionId = link.getAttribute('href');
+    smoothScroll(targetSectionId, 1000); // Adjust duration as needed
+  });
+});
+
+    </script>
+    <script>
+      // Function to set styles based on width and height
+function setImageStyles(width, height, left) {
+  const mainImage = document.querySelector('.skier');
+  mainImage.style.width = `${width}px`;
+  mainImage.style.height = `${height}px`;
+  mainImage.style.left = `${left}px`;
+}
+
+// Function to decode image name from URL
+function decodeImageName(url) {
+  return decodeURIComponent(url.split('/').pop());
+}
+
+// Dictionary of image mappings with their respective dimensions
+const imageMappings = {
+  'sepp 1.png': { src: 'skier 1.png', width: 221, height: 456, left: 220 },
+  'sepp 2.png': { src: 'tanisplayer1.png', width: 312, height: 460, left: 170 },
+  'sepp 3.png': { src: 'sepp 3 (2).png', width: 218, height: 431, left: 220 },
+  'sepp 4.png': { src: 'hiker_1.png', width: 210, height: 470, left: 220 },
+  'sepp 5.png': { src: 'footballer.png', width: 183, height: 470, left: 210 }
+};
+
+// Dictionary of image mappings with their respective headings and descriptions
+const imageContent = {
+  'sepp 1.png': {
+    heading: 'Sepp',
+    description: 'Sepp grew up in a cozy and isolated cabin perched high snow-covered peaks of Mount Blizzardfury, where he was raised and teached by his eccentric and fiercely independent grandfather, Franz, who was a master of the goat inspired fighting technique, Skiing and survival tactics. Under his tutelage, Sepp learned not only the art of skiing but also the ways of fighting. Growing a man, Sepp quickly became a renowned survivalist, an expert skier, and a masterful fighter who once even tamed a wild yeti with nothing but his hands.'
+  },
+  'sepp 2.png': {
+    heading: 'Tatatanka',
+    description: 'Tatatanka, is not your average athlete on and off the court. Growing up in a japanse orphanage, where she had to learn how to gain respect since her very early childhood. She is a force of nature, a whirlwind of energy and determination, leaving spectators in awe with her quick attacks, her superhuman skills and relentless power. With her lightning-fast footwork, Tatatanka is a true icon in the world of tennis, but also a feared champion in the world of fighting.'
+  },
+  'sepp 3.png': {
+    heading: 'Granny Mei',
+    description: "Meet Granny Mei, the vivacious and eccentric old kung fu master whose age is just a number in her world of martial arts mastery. Granny Mei may appear to be a sweet old lady knitting in her rocking chair, but when danger calls, she transforms into a vicious fighter with set of kicks and punches, leaving her foes bewildered and defeated. Granny Mei's fighting style is as unconventional as it is effective, combining traditional fighting mechanics with unexpected moves and unorthodox techniques that catch her opponents off guard."
+  },
+  'sepp 4.png': {
+    heading: 'Herbert',
+    description: 'Herbert, also known as the Hiker, a renowned warrior from Germany, is a living testament to the power of resilience and determination. Despite the loss of one leg in a fierce battle with a grizzly bear, Herbert has emerged as a beacon of inspiration in the world of fighters and adventurers. Crossing the alps, climbing mount everest or fighting rivals, Herbert is demanding challenges wherever he can. Herbert embodies the essence of triumph over adversity, making him a hero whose tale will be remembered for generations to come and who spreads fear among his enemies.'
+  },
+  'sepp 5.png': {
+    heading: 'Felipe',
+    description: "Felipe, born and raised in the vibrant streets of Brazil, became a both a world class football player and a furious fighter who is well known in the gritty favelas of brazil. His unique skillset, his relentless power and his artsy touch make people wonder if his parents involve both Ronaldo and Myke Tyson. With his agility and a keen eye for goal, he dazzled audiences on the football field, becoming a celebrated name in Brazilian soccer. Off the pitch, in the heart of the favelas, Felipe's reputation as a fearless fighter spread like wildfire. His unparalleled determination and raw talent earned him respect and fear in both worlds.Fun Fact: Despite his fierce reputation in the favelas and on the football field, Felipe is an avid animal lover and spends his free time volunteering at local animal shelters in Brazil."
+  }
+};
+
+
+// Get all images with class "sepp" in the "rectangle-9" div
+const thumbnailImages = document.querySelectorAll('.rectangle-9 .sepp');
+
+// Get the main image
+const mainImage = document.querySelector('.skier');
+// Get the text elements
+const headingElement = document.querySelector('.text-wrapper-13');
+const descriptionElement = document.querySelector('.sepp-grew-up-in-a');
+
+// Function to change the main image when a thumbnail is clicked
+thumbnailImages.forEach(thumbnail => {
+  thumbnail.addEventListener('click', function() {
+    // Get the clicked image's file name
+    const clickedImage = decodeImageName(this.src);
+
+    // Get the corresponding image from the dictionary
+    const imageData = imageMappings[clickedImage];
+
+    // If the image data exists in the dictionary, update the main image and its dimensions
+    if (imageData) {
+      mainImage.src = `img/${decodeImageName(imageData.src)}`;
+      setImageStyles(imageData.width, imageData.height, imageData.left);
+
+      // Get the corresponding content from the dictionary
+      const content = imageContent[clickedImage];
+
+      // If the content exists in the dictionary, update the text elements
+      if (content) {
+        headingElement.textContent = content.heading;
+        descriptionElement.textContent = content.description;
+      }
+
+      // Update the text of the main image
+      document.querySelector('.text-wrapper-13').textContent = text;
+    }
+  });
+});
+
+    </script>
   </body>
 </html>
