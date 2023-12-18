@@ -74,7 +74,7 @@ html {
   transform: translateX(-50%);
   /* Adjustments */
   text-align: center; /* For multi-line text */
-  font-family: "Russo One-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 116px;
@@ -115,7 +115,7 @@ html {
   position: absolute;
   top: 9px;
   left: 75%;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
@@ -157,7 +157,7 @@ html {
   position: absolute;
   top: 0;
   left: 23px;
-  font-family: "Glancyr-Bold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 20px;
@@ -239,7 +239,7 @@ html {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: transparent;
   font-size: 100px;
@@ -278,7 +278,7 @@ html {
   font-size: 20px;
   line-height: 20px;
   white-space: nowrap;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0;
@@ -289,7 +289,7 @@ html {
   width: 567px;
   top: 265px;
   left: 99px;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 22px;
@@ -329,7 +329,7 @@ html {
   width: 755px;
   top: 58px;
   left: 383px;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: #ee1ba0;
   font-size: 100px;
@@ -342,7 +342,7 @@ html {
   width: 385px;
   top: 505px;
   left: 589px;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: #a5deff;
   font-size: 32px;
@@ -429,7 +429,7 @@ html {
   width: 141px;
   top: 25px;
   left: 25px;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 64px;
@@ -443,7 +443,7 @@ html {
   width: 141px;
   top: 120px;
   left: 25px;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 16px;
@@ -524,7 +524,7 @@ html {
   width: 192px;
   top: 495px;
   left: 0;
-  font-family: "Glancyr-Bold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 40px;
@@ -538,7 +538,7 @@ html {
   width: 233px;
   top: 551px;
   left: 101px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -587,7 +587,7 @@ html {
   position: absolute;
   top: 597px;
   left: 58px;
-  font-family: "Glancyr-Bold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 67px;
@@ -601,7 +601,7 @@ html {
   position: absolute;
   top: 672px;
   left: 171px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -632,7 +632,7 @@ html {
   width: 108px;
   top: 30px;
   left: 43px;
-  font-family: "Glancyr-Bold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 40px;
@@ -647,7 +647,7 @@ html {
   width: 233px;
   top: 65px;
   left: 97px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -663,7 +663,7 @@ html {
   left: 478px;
   font-size: 100px;
   line-height: normal;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0;
@@ -705,7 +705,7 @@ html {
   width: 739px;
   top: 418px;
   left: 620px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -738,7 +738,7 @@ html {
   transform: translateX(-50%);
   text-align: center; 
   top: 69px;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   font-size: 100px;
   color: #ffffff;
@@ -751,7 +751,7 @@ html {
   width: 150px;
   top: 292px;
   left: 620px;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: #ffffff;
   font-size: 60px;
@@ -846,7 +846,7 @@ html {
   height: 102px;
   top: 171px;
   left: 7%;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 44px;
@@ -859,7 +859,7 @@ html {
   width: 596px;
   top: 303px;
   left: 7%;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -898,7 +898,7 @@ html {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Glancyr-Medium", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 500;
   color: var(--black-whitewhite);
   font-size: 16px;
@@ -974,7 +974,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glancyr-Light", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 300;
   color: #ffffff;
   font-size: 12px;
@@ -990,7 +990,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ff3fb9;
   font-size: 20px;
@@ -1005,7 +1005,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -1016,7 +1016,7 @@ html {
 }
 
 .desktop .span {
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -1095,9 +1095,10 @@ html {
   display: flex;
   align-items: center; /* Align items vertically in the center */
   justify-content: space-between; /* Distribute items evenly along the row */
-  width: 60%;
+  width: 50%;
   position: absolute;
-  left: 20%;
+  left: 30%;
+  margin-top: 5px;
 }
 /* Adjust individual menu items */
 .desktop .trading-2,
@@ -1149,7 +1150,7 @@ html {
   width: fit-content;
   margin-top: -8px;
   margin-bottom: -4px;
-  font-family: "Glancyr-SemiBold", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 600;
   color: #fbd8c4;
   font-size: 14px;
@@ -1164,7 +1165,7 @@ html {
   height: 27px;
   top: 36px;
   left: 608px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1180,7 +1181,7 @@ html {
   height: 27px;
   top: 36px;
   left: 716px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1196,7 +1197,7 @@ html {
   height: 27px;
   top: 36px;
   left: 821px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1212,7 +1213,7 @@ html {
   height: 27px;
   top: 36px;
   left: 904px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -1228,7 +1229,7 @@ html {
   height: 27px;
   top: 36px;
   left: 1015px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1244,7 +1245,7 @@ html {
   height: 27px;
   top: 36px;
   left: 1110px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1260,7 +1261,7 @@ html {
   height: 27px;
   top: 36px;
   left: 520px;
-  font-family: "Glancyr-Regular", Helvetica;
+  font-family: "Glance", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1275,7 +1276,7 @@ html {
   width: 95px;
   height: 28px;
   top: 35px;
-  left: 64%;
+  left: 68%;
   cursor: pointer;
 }
 
@@ -1302,7 +1303,7 @@ html {
   width: 98px;
   height: 49px;
   top: 30px;
-  left: 74%;
+  left: 78%;
   cursor: pointer;
 }
 
