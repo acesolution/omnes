@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'Russo-One';
+  src: url('fonts/RussoOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'Glancyr-Regular';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-Regular.otf');
+}
+@font-face {
+  font-family: 'Glancyr-SemiBold';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-SemiBold.otf');
+}
+@font-face {
+  font-family: 'Glancyr-Medium';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-Medium.otf');
+}
+@font-face {
+  font-family: 'Glancyr-Bold';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-Bold.otf');
+}
+@font-face {
+  font-family: 'Glancyr-SemiBold';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-SemiBold.otf');
+}
+@font-face {
+  font-family: 'Glancyr-Light';
+  src: url('fonts/Glancyr/OpenType-PS/Glancyr-Light.otf');
+  /* You can include additional font formats like 'ttf', 'otf', 'eot' for better compatibility */
+}
 
 html {
   width: var(--screen-width);
@@ -47,6 +76,7 @@ html {
   top: 191px;
   width: 100%;
   text-align: center;
+  font-family: "Morena-Regular", Helvetica;
 }
 .myclass-1 {
   position: absolute;
@@ -74,7 +104,7 @@ html {
   transform: translateX(-50%);
   /* Adjustments */
   text-align: center; /* For multi-line text */
-  font-family: "Glance", Helvetica;
+  font-family: "Russo-One", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 116px;
@@ -89,7 +119,7 @@ html {
   width: 100%;
   height: 96px;
   top: 797px;
-  left: 5%;
+  left: 2%;
 }
 
 .desktop .overlap-group {
@@ -115,7 +145,7 @@ html {
   position: absolute;
   top: 9px;
   left: 75%;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
@@ -149,15 +179,21 @@ html {
   position: absolute;
   width: 24px;
   height: 29px;
-  top: 30px;
+  top: 22px;
   left: 660px;
+  z-index: 1000;
+}
+.class-group {
+  position: absolute;
+  left: 634px;
+  top: 1px;
 }
 
 .desktop .OMNES-GAMING {
   position: absolute;
   top: 0;
   left: 23px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 20px;
@@ -239,7 +275,7 @@ html {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: transparent;
   font-size: 100px;
@@ -278,7 +314,7 @@ html {
   font-size: 20px;
   line-height: 20px;
   white-space: nowrap;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0;
@@ -289,7 +325,7 @@ html {
   width: 567px;
   top: 265px;
   left: 99px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 22px;
@@ -329,7 +365,7 @@ html {
   width: 755px;
   top: 58px;
   left: 383px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: #ee1ba0;
   font-size: 100px;
@@ -342,7 +378,7 @@ html {
   width: 385px;
   top: 505px;
   left: 589px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #a5deff;
   font-size: 32px;
@@ -429,7 +465,7 @@ html {
   width: 141px;
   top: 25px;
   left: 25px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 64px;
@@ -443,7 +479,7 @@ html {
   width: 141px;
   top: 120px;
   left: 25px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 16px;
@@ -524,7 +560,7 @@ html {
   width: 192px;
   top: 495px;
   left: 0;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 40px;
@@ -538,7 +574,7 @@ html {
   width: 233px;
   top: 551px;
   left: 101px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -587,7 +623,7 @@ html {
   position: absolute;
   top: 597px;
   left: 58px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 67px;
@@ -601,7 +637,7 @@ html {
   position: absolute;
   top: 672px;
   left: 171px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -632,7 +668,7 @@ html {
   width: 108px;
   top: 30px;
   left: 43px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 40px;
@@ -647,7 +683,7 @@ html {
   width: 233px;
   top: 65px;
   left: 97px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -663,7 +699,7 @@ html {
   left: 478px;
   font-size: 100px;
   line-height: normal;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0;
@@ -705,7 +741,7 @@ html {
   width: 739px;
   top: 418px;
   left: 620px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -738,7 +774,7 @@ html {
   transform: translateX(-50%);
   text-align: center; 
   top: 69px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   font-size: 100px;
   color: #ffffff;
@@ -751,7 +787,7 @@ html {
   width: 150px;
   top: 292px;
   left: 620px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
   font-size: 60px;
@@ -846,7 +882,7 @@ html {
   height: 102px;
   top: 171px;
   left: 7%;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
   font-size: 44px;
@@ -859,7 +895,7 @@ html {
   width: 596px;
   top: 303px;
   left: 7%;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -874,12 +910,22 @@ html {
   top: 514px;
   left: 7%;
 }
+.div-class {
+  position: absolute;
+  left: 4%;
+}
+
+.class-ellipse {
+  position: absolute;
+  left: 648px;
+  top: 13px;
+}
 
 .desktop .frame {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   padding: 20px 46px;
   position: relative;
   background-color: #ee1ba1;
@@ -898,7 +944,7 @@ html {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Medium", Helvetica;
   font-weight: 500;
   color: var(--black-whitewhite);
   font-size: 16px;
@@ -974,7 +1020,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Light", Helvetica;
   font-weight: 300;
   color: #ffffff;
   font-size: 12px;
@@ -990,7 +1036,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ff3fb9;
   font-size: 20px;
@@ -1005,7 +1051,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; 
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -1016,7 +1062,7 @@ html {
 }
 
 .desktop .span {
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -1029,7 +1075,7 @@ html {
   width: 152px;
   height: 40px;
   top: 279px;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   text-align: center; 
 }
@@ -1097,8 +1143,9 @@ html {
   justify-content: space-between; /* Distribute items evenly along the row */
   width: 50%;
   position: absolute;
-  left: 30%;
-  margin-top: 5px;
+  left: 25%;
+  padding: 12px;
+
 }
 /* Adjust individual menu items */
 .desktop .trading-2,
@@ -1150,7 +1197,7 @@ html {
   width: fit-content;
   margin-top: -8px;
   margin-bottom: -4px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: #fbd8c4;
   font-size: 14px;
@@ -1165,7 +1212,7 @@ html {
   height: 27px;
   top: 36px;
   left: 608px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1176,12 +1223,11 @@ html {
 }
 
 .desktop .staking {
- 
   width: 68px;
   height: 27px;
   top: 36px;
   left: 716px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1189,6 +1235,12 @@ html {
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+.staking a {
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .desktop .team-2 {
@@ -1197,7 +1249,7 @@ html {
   height: 27px;
   top: 36px;
   left: 821px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1205,6 +1257,8 @@ html {
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically align items */
 }
 
 .desktop .stories-2 {
@@ -1213,7 +1267,7 @@ html {
   height: 27px;
   top: 36px;
   left: 904px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -1224,12 +1278,11 @@ html {
 }
 
 .desktop .token {
- 
   width: 52px;
   height: 27px;
   top: 36px;
-  left: 1015px;
-  font-family: "Glance", Helvetica;
+  left: 1102px;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1237,6 +1290,11 @@ html {
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+.token a {
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .desktop .roadmap {
@@ -1245,7 +1303,7 @@ html {
   height: 27px;
   top: 36px;
   left: 1110px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1253,6 +1311,11 @@ html {
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+.roadmap a {
+  margin-right: 10px; /* Adjust margin as needed */
 }
 
 .desktop .game-2 {
@@ -1261,7 +1324,7 @@ html {
   height: 27px;
   top: 36px;
   left: 520px;
-  font-family: "Glance", Helvetica;
+  font-family: "Glancyr-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
@@ -1276,7 +1339,7 @@ html {
   width: 95px;
   height: 28px;
   top: 35px;
-  left: 68%;
+  left: 65%;
   cursor: pointer;
 }
 
@@ -1285,17 +1348,13 @@ html {
   width: 74px;
   height: 47px;
   top: 25px;
-  left: 47%;
+  left: 43%;
   cursor: pointer;
 }
 
 .desktop .element-3 {
-  position: fixed;
-  width: 69px;
-  height: 103px;
-  top: 16px;
-  left: 87%;
-  cursor: pointer;
+  width: 100px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .desktop .element-4 {
@@ -1303,7 +1362,7 @@ html {
   width: 98px;
   height: 49px;
   top: 30px;
-  left: 78%;
+  left: 75%;
   cursor: pointer;
 }
 
