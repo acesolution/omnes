@@ -181,12 +181,12 @@ html {
   width: 24px;
   height: 29px;
   top: 22px;
-  left: 660px;
+  left: 10px;
   z-index: 1000;
 }
 .class-group {
   position: absolute;
-  left: 634px;
+  left: -15px;
   top: 1px;
 }
 
@@ -819,19 +819,39 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 202px); /* Adjust width based on your design */
+  width: calc(100% - 330px); /* Adjust width based on your design */
   background-color: transparent;
   filter: blur(0px);
-  padding: 0 100px; /* Adjust padding to distribute the space */
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  padding: 0 127px; /* Adjust padding to distribute the space */
+}
+.sepp-my-class {
+  position: relative;
+}
+.desktop .sepp {
+  width: 219px;
+  height: 279px;
+  margin-top: 900px;
+  object-fit: cover;
+  
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.desktop .sepp {
-  width: 236px;
-  height: 304px;
+.glow-rectangle {
+  width: 231px;
+  height: 305px;
+  background: #40b5ff;
+  filter: blur(10px);
+  box-shadow: 0 0 10px #40b5ff, 0 0 20px #40b5ff, 0 0 30px #40b5ff, 0 0 40px #40b5ff;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
   margin-top: 900px;
+  display: none;
+}
 
-  object-fit: cover;
+.sepp-my-class.clicked .glow-rectangle {
+  display: block; /* Show glow rectangle for clicked image */
 }
 
 .desktop .sepp-2 {
@@ -932,12 +952,14 @@ html {
 }
 .div-class {
   position: absolute;
-  left: 4%;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .class-ellipse {
   position: absolute;
-  left: 648px;
+  left: -2px;
   top: 13px;
 }
 

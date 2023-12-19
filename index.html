@@ -64,16 +64,15 @@
                   </p>
                 </div>
               </div>
-              <div class="div-class">
-                <img class="arrow-sm-down" src="img/arrow-sm-down-svgrepo-com 1.png" />
-                <img class="class-ellipse" src="img/Ellipse 1.png" />
-                <img class="class-group" src="img/Group 7.png" />
-              </div>
               
               <div class="OMNES-GAMING">OMNES<br />GAMING<br />COMMUNITY</div>
             </div>
           </div>
-          
+          <div class="div-class">
+            <img class="arrow-sm-down" src="img/arrow-sm-down-svgrepo-com 1.png" />
+            <img class="class-ellipse" src="img/Ellipse 1.png" />
+            <img class="class-group" src="img/Group 7.png" />
+          </div>
         </div>
         <div class="trading" id="trading">
           <div class="overlap-group-2">
@@ -165,12 +164,33 @@
             </div>
             <div class="text-wrapper-12">STORIES</div>
             <div class="rectangle-9">
-              <img class="sepp" src="img/sepp 1.png" />
-              <img class="sepp" src="img/sepp 2.png" />
+              <div class="sepp-my-class" data-image="sepp1">
+                <img class="sepp" src="img/sepp 1.png" />
+                <div class="glow-rectangle" data-image-glow="sepp1"></div>
+              </div>
+              <div class="sepp-my-class" data-image="sepp2">
+                <img class="sepp" src="img/sepp 2.png" />
+                <div class="glow-rectangle" data-image-glow="sepp2"></div>
+                
+              </div>
+              <div class="sepp-my-class" data-image="sepp3">
+                <img class="sepp" src="img/sepp 3.png" />
+                <div class="glow-rectangle" data-image-glow="sepp3"></div>
+              </div>
+              <div class="sepp-my-class" data-image="sepp4">
+                <img class="sepp" src="img/sepp 4.png" />
+                <div class="glow-rectangle" data-image-glow="sepp4"></div>
+              </div>
+              <div class="sepp-my-class" data-image="sepp5">
+                <img class="sepp" src="img/sepp 5.png" />
+                <div class="glow-rectangle" data-image-glow="sepp5"></div>
+              </div>
+              <!-- <img class="sepp" src="img/sepp 2.png" />
               <img class="sepp" src="img/sepp 3.png" />
               <img class="sepp" src="img/sepp 4.png" />
-              <img class="sepp" src="img/sepp 5.png" />
+              <img class="sepp" src="img/sepp 5.png" /> -->
             </div>
+
           </div>
         </div>
         <div class="join-discord" id="roadmap">
@@ -216,6 +236,12 @@
     </div>
 
     <script>
+      // Get the glow rectangles and trigger the glow effect on the first one
+      const glowRect = document.querySelector(`.glow-rectangle[data-image-glow="sepp1"]`);
+      if (glowRect) {
+        glowRect.style.display = 'block';
+      }
+
       // Smooth scrolling function
       function smoothScroll(target, duration) {
   const targetSection = document.querySelector(target);
@@ -256,6 +282,7 @@ navLinks.forEach((link) => {
 
     </script>
     <script>
+
       // Function to set styles based on width and height
 function setImageStyles(width, height, left) {
   const mainImage = document.querySelector('.skier');
@@ -304,16 +331,17 @@ const imageContent = {
 
 
 // Get all images with class "sepp" in the "rectangle-9" div
-const thumbnailImages = document.querySelectorAll('.rectangle-9 .sepp');
+const thumbnailImages = document.querySelectorAll('.rectangle-9 .sepp-my-class .sepp');
 
 // Get the main image
 const mainImage = document.querySelector('.skier');
 // Get the text elements
 const headingElement = document.querySelector('.text-wrapper-13');
 const descriptionElement = document.querySelector('.sepp-grew-up-in-a');
-
+console.log(thumbnailImages);
 // Function to change the main image when a thumbnail is clicked
 thumbnailImages.forEach(thumbnail => {
+
   thumbnail.addEventListener('click', function() {
     // Get the clicked image's file name
     const clickedImage = decodeImageName(this.src);
@@ -341,6 +369,38 @@ thumbnailImages.forEach(thumbnail => {
   });
 });
 
+    </script>
+    <script>
+      const imageContainers = document.querySelectorAll('.rectangle-9 .sepp-my-class');
+
+imageContainers.forEach(container => {
+  container.addEventListener('click', function() {
+    // Remove the 'clicked' class from all containers
+    imageContainers.forEach(item => {
+      item.classList.remove('clicked');
+    });
+
+    // Add 'clicked' class to the clicked container
+    container.classList.add('clicked');
+
+    // Get the data-image attribute value for the clicked container
+    const imageId = this.getAttribute('data-image');
+
+    // Hide all glow rectangles
+    document.querySelectorAll('.glow-rectangle').forEach(rectangle => {
+      rectangle.style.display = 'none';
+    });
+
+    // Show the glow rectangle for the clicked image
+    const glowRect = document.querySelector(`.glow-rectangle[data-image-glow="${imageId}"]`);
+    if (glowRect) {
+      glowRect.style.display = 'block';
+    }
+
+    // Implement the logic to change images and text here based on the clicked image
+    // ...
+  });
+});
     </script>
   </body>
 </html>
