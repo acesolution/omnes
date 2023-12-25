@@ -301,8 +301,7 @@ html {
   /* Additional styles */
 }
 .holding-div {
-  overflow-y: auto;
-  overflow-x: hidden;
+  margin-left: -25px;
   height: 450px;
   width: 80%;
 }
@@ -1410,6 +1409,7 @@ padding: 15px;
 .desktop .stories-2,
 .desktop .token,
 .desktop .roadmap,
+.desktop .minting-2,
 .desktop .game-2 {
   margin: 32px 32px; /* Add margin for spacing between menu items */
 }
@@ -1464,7 +1464,22 @@ padding: 15px;
 
 .desktop .trading-2 {
  
-  width: 66px;
+  width: 40px;
+  height: 27px;
+  top: 36px;
+  left: 608px;
+  font-family: "Glancyr-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.desktop .minting-2  {
+  width: 50px;
   height: 27px;
   top: 36px;
   left: 608px;
@@ -1479,7 +1494,7 @@ padding: 15px;
 }
 
 .desktop .staking {
-  width: 68px;
+  width: 60px;
   height: 27px;
   top: 36px;
   left: 716px;
@@ -1501,7 +1516,7 @@ padding: 15px;
 
 .desktop .team-2 {
  
-  width: 46px;
+  width: 40px;
   height: 27px;
   top: 36px;
   left: 821px;
@@ -1519,7 +1534,7 @@ padding: 15px;
 
 .desktop .stories-2 {
  
-  width: 67px;
+  width: 50px;
   height: 27px;
   top: 36px;
   left: 904px;
@@ -1534,7 +1549,7 @@ padding: 15px;
 }
 
 .desktop .token {
-  width: 52px;
+  width: 30px;
   height: 27px;
   top: 36px;
   left: 1102px;
@@ -1555,7 +1570,7 @@ padding: 15px;
 
 .desktop .roadmap {
  
-  width: 82px;
+  width: 60px;
   height: 27px;
   top: 36px;
   left: 1110px;
@@ -1576,7 +1591,7 @@ padding: 15px;
 
 .desktop .game-2 {
  
-  width: 51px;
+  width: 35px;
   height: 27px;
   top: 36px;
   left: 520px;
