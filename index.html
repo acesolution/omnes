@@ -74,6 +74,93 @@
             <img class="class-group" src="img/Group 7.png" />
           </div>
         </div>
+        <div class="minting" id="minting">
+          <div class="overlap-group-2">
+            <img class="img-class" src="img/Mask group 3.png" alt="">
+            <div class="minting-background">
+              <div class="layer-background">
+                <div class="shine-background"></div>
+              </div>
+            </div>
+            <div class="content">
+              <!-- <img class="mask-group" src="img/imge 1.png" /> -->
+              <div class="text-wrapper">MINTING</div>
+              <div class="button-hover-wrapper-minting">
+                <div class="button-hover"><div class="OUR-minting-hidden">Connect Wallet</div></div>
+              </div>
+              <p class="since-the-launch-of">
+                Connect your wallet to the NFT platform or marketplace where you want to mint your NFT. This could be platforms like OpenSea, Rarible, Mintable, or others, depending on the blockchain.
+              </p>
+            </div>
+            <div class="image-wrapper">
+              <img src="img/mint glow 1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="minting-hidden" id="minting-hidden">
+          <div class="overlap-group-hidden">
+            <div class="minting-background-hidden">
+            </div>
+            <div class="content-hidden">
+              <div class="title-hidden">MINTING</div>
+              <div class="list-wrapper-hidden">
+                <div class="heading-bar-hidden">
+                  <div class="column-hidden">PHASE</div>
+                  <div class="column-hidden">PRICE</div>
+                  <div class="column-hidden">ELIGIBILITY  </div>
+                  <div class="column-hidden">Minted</div>
+                </div>
+                <div class="holding-div">
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                  <div class="list-hidden">
+                    <div class="column-hidden-list">Phase 1</div>
+                    <div class="column-hidden-list">$10</div>
+                    <div class="column-hidden-list">Eligible</div>
+                    <div class="column-hidden-list">100/200</div>
+                    <!-- Repeat these columns to match your data -->
+                  </div>
+                </div>
+              </div>
+              <div class="center-button">
+                <button class="your-button-class">1922/1922</button>
+              </div>
+            </div>
+          </div>
+        </div>    
         <div class="trading" id="trading">
           <div class="overlap-group-2">
             <div class="background">
@@ -401,6 +488,37 @@ imageContainers.forEach(container => {
     // ...
   });
 });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const button = document.querySelector('.button-hover');
+      const sectionToHide = document.querySelector('.minting');
+      const sectionToDisplay = document.querySelector('.minting-hidden');
+      const trading = document.querySelector('.trading');
+      const game = document.querySelector('.game');
+      const team = document.querySelector('.team');
+      const stories = document.querySelector('.stories');
+      const discod = document.querySelector('.join-discord');
+      const footer = document.querySelector('.footer');
+
+      button.addEventListener('click', function() {
+        // Change top position for mobile view
+        sectionToHide.style.display = 'none';
+        sectionToDisplay.style.display = 'block';
+        if (window.innerWidth <= 768) {
+          
+        } else {
+          // For desktop view, hide and show sections by changing display
+          sectionToHide.style.display = 'none';
+          sectionToDisplay.style.display = 'block';
+          sectionToDisplay.style.top = '1789px';
+          trading.style.top = '2662px';
+          team.style.top = '3530px';
+          discod.style.top = '4855px';
+          
+        }
+      });
+    });
     </script>
   </body>
 </html>

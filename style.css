@@ -216,19 +216,46 @@ html {
   top: 80px;
   object-fit: cover;
 }
+.image-wrapper {
+  flex: 1; /* Allow the image to expand */
+  text-align: right; /* Align the image to the right */
+  z-index: 0; /* Ensure the image is behind the text */
+}
 
-.desktop .trading {
-  position: absolute;
+.desktop .minting {
+  position: relative;
   width: 100%;
   height: 873px;
   top: 1789px;
   left: 0;
 }
+.desktop .minting-hidden {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  top: 6789px;
+  left: 0;
+}
+.desktop .trading {
+  position: absolute;
+  width: 100%;
+  height: 873px;
+  top: 2500px;
+  left: 0;
+}
+
 
 .desktop .overlap-group-2 {
   position: relative;
   width: 100%;
   height: 873px;
+}
+
+.desktop .overlap-group-hidden {
+  position: relative;
+  width: 100%;
+  height: 800px;
 }
 
 .desktop .rectangle {
@@ -239,6 +266,128 @@ html {
   left: 0;
   background-color: #120b1d;
 }
+
+.shine-background-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  z-index: 2;
+}
+
+.content-hidden {
+  text-align: center; /* Center align content */
+  padding-top: 80px; /* Adjust top padding */
+  /* Additional styles */
+  z-index: 100;
+}
+
+.title-hidden {
+  /* Additional styles */
+  color: #EE1BA1;
+  font-family: Glancyr;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.list-wrapper-hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  /* Additional styles */
+}
+.holding-div {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 450px;
+  width: 80%;
+}
+.center-button {
+  text-align: center; /* Aligns the button to the center */
+  margin-top: 20px; /* Adjust top margin as needed */
+  
+}
+
+/* Styles for the button */
+.your-button-class {
+  padding: 15px 70px; /* Adjust padding for the button */
+  font-size: 16px; /* Adjust font size for the button text */
+  /* Additional button styles */
+  border: 1px solid #FFF8F8;
+ background: #EE1BA1;
+}
+
+/* Styles to make the button text centered */
+.your-button-class {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--black-white-white, #FFF);
+font-family: Glancyr;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.list-hidden {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Adjust width of columns */
+  margin-bottom: 10px; /* Adjust bottom margin */
+  /* Additional styles */
+  border-radius: 0.625rem;
+  background: rgba(238, 27, 159, 0.20);
+  backdrop-filter: blur(15px);
+  padding: 15px;
+  /* Additional styles */
+}
+
+
+.heading-bar-hidden {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Adjust width of columns */
+  margin-bottom: 10px; /* Adjust bottom margin */
+  /* Additional styles */
+  border-radius: 0.625rem;
+background: rgba(139, 241, 255, 0.20);
+backdrop-filter: blur(10px);
+padding: 15px;
+}
+
+.column-hidden {
+  flex: 1;
+  text-align: center;
+  padding: 10px; /* Adjust padding */
+  /* Additional styles */
+  color: #FFF;
+  font-family: Glancyr;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+.column-hidden-list {
+  flex: 1;
+  text-align: center;
+  padding: 10px; /* Adjust padding */
+  /* Additional styles */
+  color: #FFF;
+  font-family: Glancyr;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
 
 .desktop .imge {
   position: absolute;
@@ -275,6 +424,41 @@ html {
   background:url('img/imge 1.png');
   position: relative;
 }
+.desktop .minting-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Set the background image and styles */
+  background:url('img/minting-background.png');
+  
+  background-size: cover; /* Adjusts the background size to cover the entire area */
+  z-index: -1; /* Ensures it's placed behind other content */
+  width: 100%;
+  height: 873px;
+}
+.desktop .minting-background-hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Set the background image and styles */
+  background:url('img/Rectangle 33652hidden.png');
+  
+  background-size: cover; /* Adjusts the background size to cover the entire area */
+  z-index: -1; /* Ensures it's placed behind other content */
+  width: 100%;
+  height: 873px;
+}
+.content {
+  flex: 1; /* Allow content to expand to fill available space */
+  padding-right: 20px;
+}
+.image-wrapper {
+  flex: 1; /* Allow the image to expand */
+}
 .desktop .layer-background {
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)); /* Gradient from black to white with opacity */
   position: absolute;
@@ -283,7 +467,14 @@ html {
   width: 100%;
   height: 100%;
 }
-
+.desktop .layer-background-hidden {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)); /* Gradient from black to white with opacity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .desktop .text-wrapper {
   position: absolute;
   width: 507px;
@@ -293,7 +484,7 @@ html {
   -webkit-background-clip: text !important;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+
   font-family: "Glancyr-SemiBold", Helvetica;
   font-weight: 600;
   color: transparent;
@@ -302,11 +493,20 @@ html {
   line-height: normal;
 }
 
+
 .desktop .button-hover-wrapper {
   position: absolute;
   width: 229px;
   height: 63px;
   top: 681px;
+  left: 102px;
+}
+
+.desktop .button-hover-wrapper-minting {
+  position: absolute;
+  width: 229px;
+  height: 63px;
+  top: 500px;
   left: 102px;
 }
 
@@ -324,9 +524,23 @@ html {
   border: 2px solid;
   border-color: transparent;
   border-image: linear-gradient(to bottom, rgb(255, 219.16, 199), rgba(255, 245, 199, 0)) 1;
+  cursor: pointer;
 }
 
 .desktop .OUR-DISCORD {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-size: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  font-family: "Glancyr-Regular", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.OUR-minting-hidden {
   position: relative;
   width: fit-content;
   margin-top: -0.5px;
@@ -512,7 +726,7 @@ html {
   position: absolute;
   width: 100%;
   height: 1328px;
-  top: 2662px;
+  top: 3372px;
   left: 0;
 }
 
@@ -729,7 +943,7 @@ html {
   position: absolute;
   width: 100%;
   height: 1265px;
-  top: 4727px;
+  top: 5435px;
   left: -3px;
 }
 
@@ -894,7 +1108,7 @@ html {
   position: absolute;
   width: 100%;
   height: 737px;
-  top: 3990px;
+  top: 4700px;
   left: -1px;
   background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
 
@@ -1009,7 +1223,7 @@ html {
   position: absolute;
   width: 100%;
   height: 424px;
-  top: 5992px;
+  top: 6700px;
   left: -3px;
   background-color: transparent;
 }
@@ -1422,15 +1636,25 @@ html {
   position: absolute; 
   width: 100%;
 }
+.img-class-hidden {
+  position: absolute; 
+  width: 100%;
+  height: 873px;
+  background-size: cover;
+}
 
 @media screen and (max-width:450px) {
   .desktop .flex-container {
     left: 760px;
   }
+  .image-wrapper {
+    position: relative;
+    padding-left: 630px;
+  }
   .desktop .join-discord {
     width: 1565px;
     height: 737px;
-    top: 4003px;
+    top: 4712px;
   }
   .desktop .mask-group-2 {
     width: 1565px;
@@ -1507,6 +1731,13 @@ html {
     width: 1565px;
     background:#120b1d;
   }
+  .desktop .button-hover-wrapper-minting 
+  {
+    z-index: 1000;
+  }
+  .desktop .minting-hidden {
+    width: 1565px;
+  }
 
 }
 
@@ -1541,4 +1772,5 @@ html {
   .desktop .text-wrapper-13 {
     left: 38%;
   }
+  
 }
