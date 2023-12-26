@@ -1705,6 +1705,174 @@ padding: 15px;
   height: 873px;
   background-size: cover;
 }
+@media screen and (min-width:1580px) {
+  .desktop .minting {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 1789px;
+    left: 0;
+  }
+  .desktop .trading {
+    position: absolute;
+    width: 100%;
+    height: 873px;
+    top: 2668px;
+    left: 0;
+  }
+  .desktop .button-hover-wrapper-minting {
+    position: absolute;
+    width: 229px;
+    height: 63px;
+    top: 820px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .desktop .team {
+    position: absolute;
+    width: 100%;
+    height: 1328px;
+    top: 3500px;
+    left: 0;
+  }
+  .desktop .stories {
+    position: absolute;
+    width: 100%;
+    height: 1265px;
+    top: 5563px;
+    left: -3px;
+  }
+  .desktop .join-discord {
+    position: absolute;
+    width: 100%;
+    height: 737px;
+    top: 4826px;
+    left: -1px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  
+  }
+  .desktop .footer {
+    position: absolute;
+    width: 100%;
+    height: 424px;
+    top: 6827px;
+    left: -3px;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width:1780px) {
+  .desktop .minting {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 1789px;
+    left: 0;
+  }
+  .desktop .trading {
+    position: absolute;
+    width: 100%;
+    height: 873px;
+    top: 2768px;
+    left: 0;
+  }
+  .desktop .button-hover-wrapper-minting {
+    position: absolute;
+    width: 229px;
+    height: 63px;
+    top: 920px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .desktop .team {
+    position: absolute;
+    width: 100%;
+    height: 1328px;
+    top: 3639px;
+    left: 0;
+  }
+  .desktop .stories {
+    position: absolute;
+    width: 100%;
+    height: 1265px;
+    top: 5703px;
+    left: -3px;
+  }
+  .desktop .join-discord {
+    position: absolute;
+    width: 100%;
+    height: 737px;
+    top: 4967px;
+    left: -1px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  
+  }
+  .desktop .footer {
+    position: absolute;
+    width: 100%;
+    height: 424px;
+    top: 6968px;
+    left: -3px;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width:1980px) {
+  .desktop .minting {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 1789px;
+    left: 0;
+  }
+  .desktop .trading {
+    position: absolute;
+    width: 100%;
+    height: 873px;
+    top: 2830px;
+    left: 0;
+  }
+  .desktop .button-hover-wrapper-minting {
+    position: absolute;
+    width: 229px;
+    height: 63px;
+    top: 980px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .desktop .team {
+    position: absolute;
+    width: 100%;
+    height: 1328px;
+    top: 3700px;
+    left: 0;
+  }
+  .desktop .stories {
+    position: absolute;
+    width: 100%;
+    height: 1265px;
+    top: 5762px;
+    left: -3px;
+  }
+  .desktop .join-discord {
+    position: absolute;
+    width: 100%;
+    height: 737px;
+    top: 5026px;
+    left: -1px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  
+  }
+  .desktop .footer {
+    position: absolute;
+    width: 100%;
+    height: 424px;
+    top: 7027px;
+    left: -3px;
+    background-color: transparent;
+  }
+}
 
 @media screen and (max-width:450px) {
   .desktop .flex-container {
@@ -1726,7 +1894,7 @@ padding: 15px;
   }
   .desktop .overlap {
     background: #120b1d;
-    width: 1565px;
+    width: 1530px;
     
   }
   .desktop .trading {
