@@ -53,9 +53,11 @@ html {
 .desktop .overlap {
   position: absolute;
   background: #120b1d;
-  width: 100%;
+  width: 1530px;
   height: 947px;
   top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .desktop .bg-glow {
@@ -1154,18 +1156,19 @@ padding: 15px;
 
 .desktop .join-discord {
   position: absolute;
-  width: 1530px;
+  width: 100%;
   height: 737px;
   top: 4826px;
   left: -1px;
-  background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
 
 }
 
 .desktop .overlap-7 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 737px;
+  background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+
 }
 
 .desktop .rectangle-10 {
@@ -1699,6 +1702,7 @@ padding: 15px;
 .img-class {
   position: absolute; 
   width: 100%;
+  height: 100%;
 }
 .img-class-hidden {
   position: absolute; 
@@ -1707,171 +1711,206 @@ padding: 15px;
   background-size: cover;
 }
 @media screen and (min-width:1580px) {
-  .desktop .minting {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 1789px;
-    left: 0;
+  .desktop .overlap { 
+    width: 1645px;
   }
-  .desktop .trading {
-    position: absolute;
-    width: 100%;
-    height: 873px;
-    top: 2668px;
-    left: 0;
-  }
-  .desktop .button-hover-wrapper-minting {
-    position: absolute;
-    width: 229px;
-    height: 63px;
-    top: 820px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  .desktop .team {
-    position: absolute;
-    width: 100%;
-    height: 1328px;
-    top: 3500px;
-    left: 0;
-  }
-  .desktop .stories {
-    position: absolute;
-    width: 100%;
-    height: 1265px;
-    top: 5563px;
-    left: -3px;
-  }
-  .desktop .join-discord {
-    position: absolute;
-    width: 100%;
-    height: 737px;
-    top: 4826px;
-    left: -1px;
+  .desktop .overlap-group-2 {
+    width: 1645px;
     background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
-  
   }
-  .desktop .footer {
-    position: absolute;
-    width: 100%;
-    height: 424px;
-    top: 6827px;
-    left: -3px;
-    background-color: transparent;
+  .desktop .overlap-2 { 
+    width: 1645px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 1645px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 1647px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 1647px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 1647px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+}
+@media screen and (min-width:1680px) {
+  .desktop .overlap { 
+    width: 1755px;
+  }
+  .desktop .overlap-group-2 {
+    width: 1755px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-2 { 
+    width: 1755px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 1755px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 1757px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 1757px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 1757px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
   }
 }
 @media screen and (min-width:1780px) {
-  .desktop .minting {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 1789px;
-    left: 0;
+  .desktop .overlap { 
+    width: 1855px;
   }
-  .desktop .trading {
-    position: absolute;
-    width: 100%;
-    height: 873px;
-    top: 2768px;
-    left: 0;
-  }
-  .desktop .button-hover-wrapper-minting {
-    position: absolute;
-    width: 229px;
-    height: 63px;
-    top: 920px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  .desktop .team {
-    position: absolute;
-    width: 100%;
-    height: 1328px;
-    top: 3639px;
-    left: 0;
-  }
-  .desktop .stories {
-    position: absolute;
-    width: 100%;
-    height: 1265px;
-    top: 5703px;
-    left: -3px;
-  }
-  .desktop .join-discord {
-    position: absolute;
-    width: 100%;
-    height: 737px;
-    top: 4967px;
-    left: -1px;
+  .desktop .overlap-group-2 {
+    width: 1855px;
     background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
-  
   }
-  .desktop .footer {
-    position: absolute;
-    width: 100%;
-    height: 424px;
-    top: 6968px;
-    left: -3px;
-    background-color: transparent;
+  .desktop .overlap-2 { 
+    width: 1855px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 1855px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 1857px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 1857px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 1857px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+}
+@media screen and (min-width:1880px) {
+  .desktop .overlap { 
+    width: 1955px;
+  }
+  .desktop .overlap-group-2 {
+    width: 1955px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-2 { 
+    width: 1955px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 1955px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 1957px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 1957px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 1957px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
   }
 }
 @media screen and (min-width:1980px) {
-  .desktop .minting {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 1789px;
-    left: 0;
+  .desktop .overlap { 
+    width: 2065px;
   }
-  .desktop .trading {
-    position: absolute;
-    width: 100%;
-    height: 873px;
-    top: 2830px;
-    left: 0;
-  }
-  .desktop .button-hover-wrapper-minting {
-    position: absolute;
-    width: 229px;
-    height: 63px;
-    top: 980px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  .desktop .team {
-    position: absolute;
-    width: 100%;
-    height: 1328px;
-    top: 3700px;
-    left: 0;
-  }
-  .desktop .stories {
-    position: absolute;
-    width: 100%;
-    height: 1265px;
-    top: 5762px;
-    left: -3px;
-  }
-  .desktop .join-discord {
-    position: absolute;
-    width: 100%;
-    height: 737px;
-    top: 5026px;
-    left: -1px;
+  .desktop .overlap-group-2 {
+    width: 2065px;
     background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
-  
   }
-  .desktop .footer {
-    position: absolute;
-    width: 100%;
-    height: 424px;
-    top: 7027px;
-    left: -3px;
-    background-color: transparent;
+  .desktop .overlap-2 { 
+    width: 2065px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 2065px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 2067px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 2067px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 2067px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+}
+@media screen and (min-width:2080px) {
+  .desktop .overlap { 
+    width: 2165px;
+  }
+  .desktop .overlap-group-2 {
+    width: 2165px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-2 { 
+    width: 2165px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 2165px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 2167px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 2167px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 2167px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+}
+@media screen and (min-width:2180px) {
+  .desktop .overlap { 
+    width: 2265px;
+  }
+  .desktop .overlap-group-2 {
+    width: 2265px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-2 { 
+    width: 2265px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-3 { 
+    width: 2265px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-7 { 
+    width: 2267px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-6 { 
+    width: 2267px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
+  }
+  .desktop .overlap-8 { 
+    width: 2267px;
+    background: linear-gradient(180deg, rgb(13, 40, 91) 0%, rgb(18, 11, 29) 34.49%, rgb(99.37, 0, 68.74) 100%);
   }
 }
 
