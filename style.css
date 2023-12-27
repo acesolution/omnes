@@ -53,14 +53,14 @@ html {
 .desktop .overlap {
   position: absolute;
   background: #120b1d;
-  width: 1530px;
+  width: 100%;
   height: 947px;
   top: 0;
 }
 
 .desktop .bg-glow {
   position: absolute;
-  width: 1530px;
+  width: 100%;
   height: 947px;
   top: 0;
   left: 41px;
@@ -224,7 +224,7 @@ html {
 }
 
 .desktop .minting {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 873px;
   top: 1789px;
@@ -232,7 +232,7 @@ html {
 }
 .desktop .minting-hidden {
   display: none;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 800px;
   top: 6789px;
@@ -1895,8 +1895,15 @@ padding: 15px;
   }
   .desktop .overlap {
     background: #120b1d;
-    width: 1530px;
-    
+    width: 1565px;
+    overflow-x: hidden;
+  }
+  .desktop .world {
+    top: 571px;
+  }
+  .desktop .banner-section {
+    background: #120b1d;
+    width: 1565px;
   }
   .desktop .trading {
     background: #120b1d;
@@ -1966,6 +1973,7 @@ padding: 15px;
   .desktop .button-hover-wrapper-minting 
   {
     z-index: 1000;
+    top: 90%;
   }
   .desktop .minting-hidden {
     width: 1565px;
