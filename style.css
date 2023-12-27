@@ -52,14 +52,15 @@ html {
 
 .desktop .overlap {
   position: absolute;
-  width: 100%;
+  background: #120b1d;
+  width: 1530px;
   height: 947px;
   top: 0;
 }
 
 .desktop .bg-glow {
   position: absolute;
-  width: 1480px;
+  width: 1530px;
   height: 947px;
   top: 0;
   left: 41px;
@@ -248,7 +249,7 @@ html {
 
 .desktop .overlap-group-2 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 873px;
 }
 
@@ -624,7 +625,7 @@ padding: 15px;
 
 .desktop .overlap-2 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 842px;
   background-color: #120b1d;
   background-image: url(./img/sample-slash-screen-1.png);
@@ -779,7 +780,7 @@ padding: 15px;
 
 .desktop .overlap-3 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 1328px;
   background-color: #120b1d;
   background-image: url(./img/mask-group-4.png);
@@ -996,7 +997,7 @@ padding: 15px;
 
 .desktop .overlap-6 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 1265px;
 }
 
@@ -1153,7 +1154,7 @@ padding: 15px;
 
 .desktop .join-discord {
   position: absolute;
-  width: 100%;
+  width: 1530px;
   height: 737px;
   top: 4826px;
   left: -1px;
@@ -1277,7 +1278,7 @@ padding: 15px;
 
 .desktop .overlap-8 {
   position: relative;
-  width: 100%;
+  width: 1530px;
   height: 424px;
 }
 
